@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebNest Pizza</title>
+  <meta name="description" content="Pizzas assadas em forno a lenha. Veja o cardápio e peça pelo WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="assets/icons/logo.ico" sizes="any">
+  <script src="js/data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap site-header__in">
+      <a class="logo" href="index.html" aria-label="WebNest Pizza, página inicial">WebNest<span>Pizza</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav"
+        aria-label="Menu"><span></span><span></span></button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul>
+          <li><a class="nav__link" href="index.html" aria-current="page">Início</a></li>
+          <li><a class="nav__link" href="cardapio.html">Cardápio</a></li>
+          <li><a class="nav__link" href="sobre.html">Nossa História</a></li>
+          <li class="nav__cta"><a class="btn btn--primary btn--sm" href="#" data-pedido>Pedir no WhatsApp <svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 5h16v11H9l-5 4z" />
+              </svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div>
+          <p class="eyebrow reveal">Pizzaria contemporânea</p>
+          <h1 class="reveal d1">Massa, fogo<br>e tempo.</h1>
+          <p class="lead reveal d2">Pizzas assadas em forno a lenha, com massa de longa fermentação. Escolha no cardápio
+            e peça pelo WhatsApp.</p>
+          <div class="hero__actions reveal d3">
+            <a class="btn btn--ghost" href="cardapio.html">Ver cardápio <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg></a>
+            <a class="btn btn--primary" href="#" data-pedido>Pedir no WhatsApp <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 5h16v11H9l-5 4z" />
+              </svg></a>
+          </div>
+        </div>
+        <figure class="media media--tall reveal d2">
+          <img src="assets/images/forno.png" alt="Forno a lenha com pizza assando">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="wrap split">
+        <div class="reveal">
+          <h2>Poucos sabores, bem feitos.</h2>
+          <p>O cardápio é enxuto de propósito: clássicos de pizzaria e alguns doces, preparados na hora.</p>
+        </div>
+        <div class="split__media reveal d1">
+          <div class="media">
+            <img src="assets/images/pizzaria.png" alt="Forno a lenha com pizza assando">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Em destaque</h2>
+          <a class="link" href="cardapio.html">Ver cardápio completo <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg></a>
+        </div>
+        <ul class="grid" data-destaques></ul>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="wrap split split--rev">
+        <div class="reveal">
+          <h2>Nossa história</h2>
+          <p>A WebNest Pizza abriu em 2016, numa esquina do Centro, com seis mesas e um forno de tijolos.</p>
+          <a class="link" href="sobre.html">Conhecer a história <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg></a>
+        </div>
+        <div class="split__media reveal d1">
+          <div class="media">
+            <img src="assets/images/massa-aberta.png" alt="Forno a lenha com pizza assando">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--creme cta">
+      <div class="wrap">
+        <h2 class="reveal">Fome? O forno já está aceso.</h2>
+        <p class="lead reveal d1">Escolha seus sabores no cardápio e finalize o pedido pelo WhatsApp.</p>
+        <div class="hero__actions reveal d2">
+          <a class="btn btn--primary" href="#" data-pedido>Pedir no WhatsApp <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 5h16v11H9l-5 4z" />
+            </svg></a>
+          <a class="btn btn--ghost" href="cardapio.html">Ver cardápio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <p class="logo">WebNest<span>Pizza</span></p>
+          <p class="footer__about">Pizzas assadas em forno a lenha. Pedidos pelo WhatsApp.</p>
+          <a class="btn btn--ghost btn--sm" href="#" data-pedido>Pedir no WhatsApp <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 5h16v11H9l-5 4z" />
+            </svg></a>
+        </div>
+        <div>
+          <h2 class="footer__title">Navegação</h2>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="sobre.html">Nossa História</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__title">Visite</h2>
+          <ul>
+            <li>Rua das Oliveiras, 120, Centro</li>
+            <li>Terça a domingo, 18h às 23h</li>
+            <li><a href="https://instagram.com/webnest.br" target="_blank" rel="noopener">Instagram @webnest.br</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__bottom">© 2026 WebNest Pizza. Projeto de demonstração.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
